@@ -1,0 +1,88 @@
+[1mdiff --git a/app/pom.xml b/app/pom.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1efb59c[m
+[1m--- /dev/null[m
+[1m+++ b/app/pom.xml[m
+[36m@@ -0,0 +1,18 @@[m
+[32m+[m[32m<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"[m
+[32m+[m[32m  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">[m
+[32m+[m[32m  <modelVersion>4.0.0</modelVersion>[m
+[32m+[m[32m  <groupId>com.grupotrt.plataforma</groupId>[m
+[32m+[m[32m  <artifactId>app</artifactId>[m
+[32m+[m[32m  <packaging>jar</packaging>[m
+[32m+[m[32m  <version>1.0-SNAPSHOT</version>[m
+[32m+[m[32m  <name>app</name>[m
+[32m+[m[32m  <url>http://maven.apache.org</url>[m
+[32m+[m[32m  <dependencies>[m
+[32m+[m[32m    <dependency>[m
+[32m+[m[32m      <groupId>junit</groupId>[m
+[32m+[m[32m      <artifactId>junit</artifactId>[m
+[32m+[m[32m      <version>3.8.1</version>[m
+[32m+[m[32m      <scope>test</scope>[m
+[32m+[m[32m    </dependency>[m
+[32m+[m[32m  </dependencies>[m
+[32m+[m[32m</project>[m
+[1mdiff --git a/app/src/main/java/com/grupotrt/plataforma/App.java b/app/src/main/java/com/grupotrt/plataforma/App.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..040ea66[m
+[1m--- /dev/null[m
+[1m+++ b/app/src/main/java/com/grupotrt/plataforma/App.java[m
+[36m@@ -0,0 +1,14 @@[m
+[32m+[m[32mpackage com.grupotrt.plataforma;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * Hello world![m
+[32m+[m[32m *[m
+[32m+[m[32m */[m
+[32m+[m[32mpublic class App[m[41m [m
+[32m+[m[32m{[m
+[32m+[m[32m    public static void main( String[] args )[m
+[32m+[m[32m    {[m
+[32m+[m[32m        System.out.println( "Hola Mundo" );[m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+[1mdiff --git a/app/src/test/java/com/grupotrt/plataforma/AppTest.java b/app/src/test/java/com/grupotrt/plataforma/AppTest.java[m
+[1mnew file mode 100644[m
+[1mindex 0000000..31dc0d6[m
+[1m--- /dev/null[m
+[1m+++ b/app/src/test/java/com/grupotrt/plataforma/AppTest.java[m
+[36m@@ -0,0 +1,38 @@[m
+[32m+[m[32mpackage com.grupotrt.plataforma;[m
+[32m+[m
+[32m+[m[32mimport junit.framework.Test;[m
+[32m+[m[32mimport junit.framework.TestCase;[m
+[32m+[m[32mimport junit.framework.TestSuite;[m
+[32m+[m
+[32m+[m[32m/**[m
+[32m+[m[32m * Unit test for simple App.[m
+[32m+[m[32m */[m
+[32m+[m[32mpublic class AppTest[m[41m [m
+[32m+[m[32m    extends TestCase[m
+[32m+[m[32m{[m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Create the test case[m
+[32m+[m[32m     *[m
+[32m+[m[32m     * @param testName name of the test case[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public AppTest( String testName )[m
+[32m+[m[32m    {[m
+[32m+[m[32m        super( testName );[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * @return the suite of tests being tested[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public static Test suite()[m
+[32m+[m[32m    {[m
+[32m+[m[32m        return new TestSuite( AppTest.class );[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    /**[m
+[32m+[m[32m     * Rigourous Test :-)[m
+[32m+[m[32m     */[m
+[32m+[m[32m    public void testApp()[m
+[32m+[m[32m    {[m
+[32m+[m[32m        assertTrue( true );[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
